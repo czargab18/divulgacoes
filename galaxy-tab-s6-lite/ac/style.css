@@ -191,6 +191,10 @@ main .btn-bottom  {
 
 
 @media (max-width: 833px) {
+  header {
+    padding: 0px 13px;
+    background: #232f3e;
+}
   main .topo {
     display: flex;
     flex-direction: column;
@@ -199,7 +203,7 @@ main .btn-bottom  {
     width: 900px;
     height: auto;
   }
-  main .detalhes{
+  main section{
     padding-left: 2em;
     padding-right: 2em;
   }
