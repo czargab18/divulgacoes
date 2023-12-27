@@ -26,6 +26,7 @@ function changeProduct(imageSrc, circleColor, newPrice, newLink) {
 
   /*Função de mudar a cor do circulo*/
   function circleChange(color) {
+    // cor do circulo em volta das imagens que foi removido do css
     const circle = document.querySelector(".circle");
     circle.style.background = color;
   }
