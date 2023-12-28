@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-family: "Times New Roman", Times, serif;
+}
+
+header {
+  width: 100%;
+  height: 40px;
+  background-color: #232f3e;
+  color: #ffffff;
+}
+header nav {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 16px;
+}
+main {
+  margin-left: 88px;
+  margin-right: 88px;
+}
+main section.topo {
+  display: flex;
+  flex-direction: row;
+  width: 530px;
+  justify-content: center;
+  gap: 188px;
+  align-content: center;
+  align-items: center;
+}
+main div.titulo {
+  display: flex;
+  flex-direction: column;
+  width: 530px;
+  color: #2a5d96;
+}
+section.topo div.titulo span.titulo {
+  font-size: 50px;
+}
+section.topo div.titulo span.subtitulo {
+  font-size: 40px;
+}
+section.topo div.descricao {
+  /* margin-top: 32px; */
+  margin-top: 16px;
+}
+section.topo div.descricao :is(p, ul) {
+  margin: 0;
+  color: #030507;
+}
+section.topo div.descricao p.text-negrito {
+  font-weight: bold;
+}
+section.topo div.descricao p span.text-italico {
+  font-style: italic;
+}
+section.topo div.main-text div.btns {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  column-gap: 40px;
+}
+section.topo div.main-text div.btns span {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  column-gap: 10px;
+  font-size: larger;
+  color: #2a5d96;
+}
+section.topo div.main-text div.btns h6 {
+  margin: 0;
+  font-size: medium;
+  color: #2a5d96;
+}
+
+section.topo div.main-text div.btns a {
+  background-color: #ffd814;
+  padding: 6px 12px;
+  border-radius: 18px;
+  text-decoration: none;
+  color: #2a5d96;
+}
+section.topo.main-text img {
+  width: 15rem;
+  margin-bottom: 3vh;
+  z-index: 2;
+}
+
+@media (max-width: 833px) {
+  header {
+    padding: 0px 13px;
+    background: #232f3e;
+  }
+  main .topo {
+    display: flex;
+    flex-direction: column;
+  }
+  main section .main-img img {
+    width: 900px;
+    height: auto;
+  }
+  main section {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+}
