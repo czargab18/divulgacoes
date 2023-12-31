@@ -79,10 +79,10 @@ main section.topo {
     margin: 40px 0px;
   }
 }
-@media (min-width: 600px){
-   main section.topo{
-      margin: 20px 0px;
-   }
+@media (min-width: 600px) {
+  main section.topo {
+    margin: 20px 0px;
+  }
 }
 main div.main-text div.titulo {
   display: flex;
@@ -101,6 +101,9 @@ main div.main-text div.titulo span.subtitulo {
 
 main div.main-text div.descricao {
   width: 530px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 main div.main-text div.descricao p {
   font-size: 16px;
