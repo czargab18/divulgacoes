@@ -224,9 +224,12 @@ main div.main-img {
   align-items: center;
   gap: 24px;
 }
-
+main div.main-img img {
+  width: 40%;
+  height: 40%;
+}
 @media (min-width: 320px) {
   main div.main-img img {
-    width: calc(100% - 100px);
+    /* width: calc(100% - 100px); */
   }
 }
