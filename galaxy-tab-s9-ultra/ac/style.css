@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* header */
+header {
+  padding: 2px 236px;
+  background: #232f3e;
+  width: 100%;
+}
+@media (max-width: 1400px) {
+  header {
+    padding: 2px 154px;
+  }
+}
+@media (max-width: 1200px) {
+  header {
+    padding: 2px 100px;
+  }
+}
+@media (max-width: 1000px) {
+  header {
+    padding: 2px 10px;
+  }
+}
+nav.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px;
+}
+.navigation span.logo {
+  width: 100px;
+  color: #fff;
+}
+.navigation span.title {
+  color: #fff;
+}
+@media (max-width: 600px) {
+  .navigation span.logo {
+    font-size: 12px;
+  }
+  .navigation span.title {
+    font-size: 12px;
+  }
+}
+/* main */
+main section.topo {
+  margin: 40px 88px;
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+}
+@media (max-width: 1200px) {
+  main section.topo {
+    margin: 40px 22px;
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+  }
+}
+
+@media (max-width: 1000px) {
+  main section.topo {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin: 40px 0px;
+  }
+}
+@media (min-width: 600px) {
+  main section.topo {
+    margin: 20px 0px;
+  }
+}
+main div.main-text div.titulo {
+  display: flex;
+  flex-direction: column;
+}
+main div.main-text div.titulo span.titulo {
+  color: #21324e;
+  font-weight: bolder;
+  font-size: 50px;
+}
+main div.main-text div.titulo span.subtitulo {
+  color: #655f5f;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+main div.main-text div.descricao {
+  width: 530px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+main div.main-text div.descricao p {
+  font-size: 16px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+main div.main-text div.descricao p span.texto-bold {
+  font-weight: bold;
+}
+@media (max-width: 1200px) {
+  main div.main-text {
+  }
+}
+@media (max-width: 1000px) {
+  main div.main-text div.descricao {
+    width: 100%;
+  }
+}
+@media (min-width: 320px) and (max-width: 600px) {
+  main div.main-text div.titulo span.titulo {
+    font-weight: bolder;
+    font-size: 24px;
+  }
+  main div.main-text div.titulo span.subtitulo {
+    font-size: 16px;
+  }
+  main div.main-text div.descricao p {
+    margin: 0px 10px;
+  }
+}
+@media (min-width: 320px) {
+  main div.main-text div.titulo {
+    margin: 0px 10px;
+  }
+  main div.main-text div.titulo span.titulo {
+    font-weight: bolder;
+    font-size: 32px;
+  }
+  main div.main-text div.titulo span.subtitulo {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+  main div.main-text div.descricao p {
+    margin: 0px 10px;
+  }
+}
+
+/* main div.video {
+  width: 100%;
+  height: 315px;
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+}
+main div.video iframe {
+  width: 80%;
+  height: calc(315px - 20%);
+} */
+main div.video {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio (height/width) */
+  overflow: hidden;
+}
+
+main div.video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* @media (min-width: 1000px) {
+  main div.video {
+    width: 100%;
+  }
+  main div.video iframe {
+    margin: 0px 16px;
+  }
+}
+@media (min-width: 600px) {
+  main div.video iframe {
+    width: 100%;
+    margin: 0px 16px;
+  }
+} */
+
+main div.btns {
+  margin-top: 36px;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 15px;
+}
+main div.btns span.preco {
+  color: #111111;
+  font-weight: 500;
+}
+main div.btns span.preco-valor {
+  font-weight: bolder;
+}
+main div.btns a.amazon-link {
+  font-size: 18px;
+  font-weight: 500;
+  color: #2a5d96;
+  padding: 5px 15px;
+  background: #ffd814;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  transition: all 0.5s;
+  /* z-index: 2; */
+}
+main div.main-img {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+main div.main-img img {
+  width: 80%;
+  height: 40%;
+}
+@media (min-width: 320px) {
+  main div.main-img img {
+    width: calc(100% - 100px);
+  }
+}
